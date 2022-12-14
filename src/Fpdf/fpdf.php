@@ -1,4 +1,4 @@
-<?php namespace Aryatama045\Fpdf\Fpdf;
+<?php namespace Codedge\Fpdf\Fpdf;
 /*******************************************************************************
 * FPDF                                                                         *
 *                                                                              *
@@ -66,17 +66,7 @@ protected $ZoomMode;           // zoom display mode
 protected $LayoutMode;         // layout display mode
 protected $metadata;           // document properties
 protected $PDFVersion;         // PDF version number
-protected $maxWidth;
-protected $maxHeight;
-protected $marginLeft;
-protected $marginRight;
-protected $angle = 0;
 
-protected $javascript;
-protected $n_js;
-protected $NewPageGroup;   // variable indicating whether a new group was requested
-protected $PageGroups;     // variable containing the number of pages of the groups
-protected $CurrPageGroup;
 /*******************************************************************************
 *                               Public methods                                 *
 *******************************************************************************/
@@ -178,32 +168,6 @@ function __construct($orientation='P', $unit='mm', $size='A4')
 	// Set default PDF version number
 	$this->PDFVersion = '1.3';
 }
-
-function GetMaxWidth()
-{
-	return $this->maxWidth;
-}
-
-function GetMaxHeight()
-{
-	return $this->maxHeight;
-}
-
-function GetMarginLeft()
-{
-	return $this->marginLeft;
-}
-
-function GetMarginRight()
-{
-	return $this->marginRight;
-}
-
-function GetAngle()
-{
-	return $this->angle;
-}
-
 function SetMaxWidth($maxWidth)
 {
 	$this->maxWidth = $maxWidth;
@@ -212,27 +176,6 @@ function SetMaxWidth($maxWidth)
 function SetMaxHeight($maxHeight)
 {
 	$this->maxHeight = $maxHeight;
-}
-
-function SetMarginLeft($marginLeft)
-{
-	$this->marginLeft = $marginLeft;
-}
-
-function SetMarginRight($marginRight)
-{
-	$this->marginRight = $marginRight;
-}
-
-function SetAngle($angle)
-{
-	$this->angle = $angle;
-}
-
-function SetOficio($width = 216, $height = 330)
-{
-	$this->setMaxHeight($width);
-	$this->setMaxWidth($height);
 }
 
 function SetA4($width = 210, $height = 297)
