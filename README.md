@@ -5,7 +5,7 @@
 **1) Composer**
 
 ```php
-composer require aryatama045/laravel-fpdf
+composer require aryatama0/laravel-fpdf
 ```
 
 **2) Optional:** Laravel 5.4 and below
@@ -23,7 +23,7 @@ Add `'Toastr' => Aryatama\Toastr\Facades\Toastr::class` to `aliases` in `config/
 
 'aliases' => [
   // ...
-  'LaraFpdf' => TGazel\LaraFpdf\Facades\LaraFpdf::class,
+  'LaraFpdf' => Aryatama\LaraFpdf\Facades\LaraFpdf::class,
 ],
 ```
 
@@ -35,7 +35,7 @@ Add `'Toastr' => Aryatama\Toastr\Facades\Toastr::class` to `aliases` in `config/
 
 ```php
 use App\Http\Controllers\Controller;
-use TGazel\LaraFpdf\Facades\LaraFpdf;
+use Aryatama\LaraFpdf\Facades\LaraFpdf;
 
 class MyController extends Controller
 {
