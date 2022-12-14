@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-        "Aryatama045\\Laravel-fpdf\\": "src/"
+        "Aryatama\\LaraFpdf\\": "src/"
         }
     },
     "minimum-stability": "stable",
