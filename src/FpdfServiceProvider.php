@@ -1,4 +1,4 @@
-<?php namespace ARya\Fpdf;
+<?php namespace Aryatama045\Fpdf;
 
 use Illuminate\Support\ServiceProvider;
 
