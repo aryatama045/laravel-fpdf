@@ -5,7 +5,7 @@
 **1) Composer**
 
 ```php
-composer require aryatama0/laravel-fpdf
+composer require aryatama045/laravel-fpdf
 ```
 
 **2) Optional:** Laravel 5.4 and below
