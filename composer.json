@@ -1,38 +1,52 @@
-  {
-    "name": "aryatama045/laravel-fpdf",
-    "description": "Extension lib FPDF  for laravel 5.*",
-    "keywords": [
+{
+  "name": "aryatama045/laravel-fpdf",
+  "description": "Laravel package to include Fpdf. It ships with Fpdf 1.84.",
+  "license": "MIT",
+  "keywords": [
+      "fpdf",
       "laravel",
-      "pdf",
-      "fpdf"
-    ],
-    "homepage": "https://github.com/aryatama045/laravel-fpdf",
-    "license": "MIT",
-    "type": "package",
-    "authors": [
-        {
-        "name": "aryatama045",
-        "email": "aryatama045@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.4.0"
-    },
-    "autoload": {
-        "psr-4": {
-        "Aryatama045\\LaraFpdf": "src/"
-        }
-    },
-    "minimum-stability": "stable",
-
-    "extra": {
-      "laravel": {
-        "providers": [
-          "Aryatama045\\LaraFpdf\\LaraFpdfServiceProvider"
-        ],
-        "aliases": {
-          "LaraFpdf": "Aryatama045\\LaraFpdf\\Facades\\LaraFpdf"
-        }
+      "pdf"
+  ],
+  "authors": [
+      {
+          "name": "Aryatama045",
+          "email": "Aryatama045@gmail.com"
       }
-    }
+  ],
+  "require": {
+      "php": "^7.4 || ^8.0 || ^8.1",
+      "illuminate/support": "^7.0 || ^8.0 || ^9.0"
+  },
+  "require-dev": {
+      "orchestra/testbench": "^6.24.1",
+      "phpunit/phpunit": "^9.5.21"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+      "psr-4": {
+          "Aryatama045\\Fpdf\\": "src"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "Aryatama045\\Fpdf\\Test\\": "tests"
+      }
+  },
+  "config": {
+      "sort-packages": true
+  },
+  "extra": {
+      "laravel": {
+          "aliases": {
+              "Fpdf": "Aryatama045\\Fpdf\\Facades\\Fpdf"
+          },
+          "providers": [
+              "Aryatama045\\Fpdf\\FpdfServiceProvider"
+          ]
+      }
+  },
+  "scripts": {
+      "test": "phpunit"
   }
+}
