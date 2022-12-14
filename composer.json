@@ -10,20 +10,21 @@
     "license": "MIT",
     "type": "package",
     "authors": [
-      {
+        {
         "name": "aryatama045",
         "email": "aryatama045@gmail.com"
-      }
+        }
     ],
     "require": {
-      "php": ">=5.4.0"
+        "php": ">=5.4.0"
     },
     "autoload": {
-      "psr-4": {
-        "LaraFpdf\\": "src/"
-      }
+        "psr-4": {
+        "Aryatama\\LaraFpdf\\": "src/"
+        }
     },
     "minimum-stability": "stable",
+
     "extra": {
       "laravel": {
         "providers": [
