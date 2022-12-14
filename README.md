@@ -5,20 +5,20 @@
 **1) Composer**
 
 ```php
-composer require tjgazel/laravel-fpdf
+composer require aryatama045/laravel-fpdf
 ```
 
 **2) Optional:** Laravel 5.4 and below
 
-Add `TJGazel\Toastr\ToastrServiceProvider::class` to `providers` in `config/app.php`. <br>
-Add `'Toastr' => TJGazel\Toastr\Facades\Toastr::class` to `aliases` in `config/app.php`. <br>
+Add `Aryatama\Toastr\ToastrServiceProvider::class` to `providers` in `config/app.php`. <br>
+Add `'Toastr' => Aryatama\Toastr\Facades\Toastr::class` to `aliases` in `config/app.php`. <br>
 
 ```
 // config/app.php
 
 'providers' => [
   // ...
-  TJGazel\LaraFpdf\LaraFpdfServiceProvider::class,
+  Aryatama\LaraFpdf\LaraFpdfServiceProvider::class,
 ],
 
 'aliases' => [
@@ -60,7 +60,7 @@ create your pdf class
 ```php
 namespace App\Pdf;
 
-use TJGazel\LaraFpdf\LaraFpdf;
+use Aryatama\LaraFpdf\LaraFpdf;
 
 class MyPdf extends LaraFpdf
 {
@@ -72,7 +72,7 @@ class MyPdf extends LaraFpdf
         parent::__construct('P', 'mm', 'A4');
         $this->SetA4();
         $this->SetTitle('My pdf title', true);
-        $this->SetAuthor('TJGazel', true);
+        $this->SetAuthor('Aryatama', true);
         $this->AddPage('L');
         $this->Body();
     }
