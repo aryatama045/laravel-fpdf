@@ -28,11 +28,6 @@
           "Aryatama045\\Fpdf\\": "src"
       }
   },
-  "autoload-dev": {
-      "psr-4": {
-          "Aryatama045\\Fpdf\\Test\\": "tests"
-      }
-  },
   "config": {
       "sort-packages": true
   },
@@ -45,8 +40,5 @@
               "Aryatama045\\Fpdf\\FpdfServiceProvider"
           ]
       }
-  },
-  "scripts": {
-      "test": "phpunit"
   }
 }
