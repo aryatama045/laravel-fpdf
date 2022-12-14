@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-        "Aryatama\\LaraFpdf": "./src"
+        "Aryatama045\\LaraFpdf": "./src"
         }
     },
     "minimum-stability": "stable",
@@ -28,10 +28,10 @@
     "extra": {
       "laravel": {
         "providers": [
-          "Aryatama\\LaraFpdf\\LaraFpdfServiceProvider"
+          "Aryatama045\\LaraFpdf\\LaraFpdfServiceProvider"
         ],
         "aliases": {
-          "LaraFpdf": "Aryatama\\LaraFpdf\\Facades\\LaraFpdf"
+          "LaraFpdf": "Aryatama045\\LaraFpdf\\Facades\\LaraFpdf"
         }
       }
     }

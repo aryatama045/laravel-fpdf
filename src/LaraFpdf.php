@@ -1,8 +1,8 @@
 <?php
 
-namespace Aryatama\LaraFpdf;
+namespace Aryatama045\LaraFpdf;
 
-use Aryatama\LaraFpdf\Fpdf\Fpdf;
+use Aryatama045\LaraFpdf\Fpdf\Fpdf;
 
 class LaraFpdf extends Fpdf
 {
