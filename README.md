@@ -121,6 +121,6 @@ class MyController extends Controller
 
 <br>
 
-# FPDF oficial docs
+# FPDF official docs
 
 [http://www.fpdf.org](http://www.fpdf.org)
