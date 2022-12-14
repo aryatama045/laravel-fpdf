@@ -23,7 +23,7 @@ Add `'Toastr' => Aryatama\Toastr\Facades\Toastr::class` to `aliases` in `config/
 
 'aliases' => [
   // ...
-  'LaraFpdf' => Aryatama\LaraFpdf\Facades\LaraFpdf::class,
+  'LaraFpdf' => Arya\LaraFpdf\Facades\LaraFpdf::class,
 ],
 ```
 
@@ -35,7 +35,7 @@ Add `'Toastr' => Aryatama\Toastr\Facades\Toastr::class` to `aliases` in `config/
 
 ```php
 use App\Http\Controllers\Controller;
-use Aryatama\LaraFpdf\Facades\LaraFpdf;
+use Arya\LaraFpdf\Facades\LaraFpdf;
 
 class MyController extends Controller
 {
