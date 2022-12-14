@@ -220,13 +220,13 @@ class LaraFpdf extends FPDF
     }
 
 
-    function IncludeJS($script, $isUTF8=false) {
+    public function IncludeJS($script, $isUTF8=false) {
         if(!$isUTF8)
             $script=utf8_encode($script);
         $this->javascript=$script;
     }
 
-    function _putjavascript() {
+    public function _putjavascript() {
         $this->_newobj();
         $this->n_js=$this->n;
         $this->_put('<<');
@@ -241,14 +241,14 @@ class LaraFpdf extends FPDF
         $this->_put('endobj');
     }
 
-    function _putresources() {
+    public function _putresources() {
         parent::_putresources();
         if (!empty($this->javascript)) {
             $this->_putjavascript();
         }
     }
 
-    function _putcatalog() {
+    public function _putcatalog() {
         parent::_putcatalog();
         if (!empty($this->javascript)) {
             $this->_put('/Names <</JavaScript '.($this->n_js).' 0 R>>');
@@ -259,19 +259,19 @@ class LaraFpdf extends FPDF
     var $widths;
     var $aligns;
 
-    function SetWidths($w)
+    public function SetWidths($w)
     {
         //Set the array of column widths
         $this->widths=$w;
     }
 
-    function SetAligns($a)
+    public function SetAligns($a)
     {
         //Set the array of column alignments
         $this->aligns=$a;
     }
 
-    function Row($data,$garis)
+    public function Row($data,$garis)
     {
         //Calculate the height of the row
         $nb=0;
@@ -304,14 +304,14 @@ class LaraFpdf extends FPDF
         $this->Ln($h);
     }
 
-    function CheckPageBreak($h)
+    public function CheckPageBreak($h)
     {
         //If the height h would cause an overflow, add a new page immediately
         if($this->GetY()+$h>$this->PageBreakTrigger)
             $this->AddPage($this->CurOrientation);
     }
 
-    function NbLines($w,$txt)
+    public function NbLines($w,$txt)
     {
         //Computes the number of lines a MultiCell of width w will take
         $cw=&$this->CurrentFont['cw'];
@@ -363,7 +363,7 @@ class LaraFpdf extends FPDF
     }
 
     //FUNGSI LINE DASH
-    function SetDash($black=false, $white=false)
+    public function SetDash($black=false, $white=false)
     {
         if($black and $white)
             $s=sprintf('[%.3f %.3f] 0 d', $black*$this->k, $white*$this->k);
@@ -373,24 +373,24 @@ class LaraFpdf extends FPDF
     }
 
     //New Page number =======================================================================================
-    function StartPageGroup()
+    public function StartPageGroup()
     {
         $this->NewPageGroup = true;
     }
 
     // current page in the group
-    function GroupPageNo()
+    public function GroupPageNo()
     {
         return $this->PageGroups[$this->CurrPageGroup];
     }
 
     // alias of the current page group -- will be replaced by the total number of pages in this group
-    function PageGroupAlias()
+    public function PageGroupAlias()
     {
         return $this->CurrPageGroup;
     }
 
-    function _beginpage($orientation, $format, $rotation)
+    public function _beginpage($orientation, $format, $rotation)
     {
         parent::_beginpage($orientation, $format, $rotation);
         if($this->NewPageGroup)
@@ -406,7 +406,7 @@ class LaraFpdf extends FPDF
             $this->PageGroups[$this->CurrPageGroup]++;
     }
 
-    function _putpages()
+    public function _putpages()
     {
         $nb = $this->page;
         if (!empty($this->PageGroups))
