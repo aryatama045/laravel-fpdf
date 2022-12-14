@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-        "Aryatama045\\LaraFpdf": "./src"
+        "Aryatama045\\LaraFpdf": "src/"
         }
     },
     "minimum-stability": "stable",
