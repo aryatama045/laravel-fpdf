@@ -1,6 +1,6 @@
 <?php
 
-namespace Aryatama045\Fpdf\Facades;
+namespace Aryatama\Fpdf\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
