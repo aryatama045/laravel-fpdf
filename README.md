@@ -10,20 +10,20 @@ composer require aryatama045/laravel-fpdf
 
 **2) Optional:** Laravel 5.4 and below
 
-Add `Aryatama045\Toastr\ToastrServiceProvider::class` to `providers` in `config/app.php`. <br>
-Add `'Toastr' => Aryatama045\Toastr\Facades\Toastr::class` to `aliases` in `config/app.php`. <br>
+Add `Codedge\Toastr\ToastrServiceProvider::class` to `providers` in `config/app.php`. <br>
+Add `'Toastr' => Codedge\Toastr\Facades\Toastr::class` to `aliases` in `config/app.php`. <br>
 
 ```
 // config/app.php
 
 'providers' => [
   // ...
-  Aryatama045\Fpdf\FpdfServiceProvider::class,
+  Codedge\Fpdf\FpdfServiceProvider::class,
 ],
 
 'aliases' => [
   // ...
-  'Fpdf' => Aryatama045\Fpdf\Facades\Fpdf::class,
+  'Fpdf' => Codedge\Fpdf\Facades\Fpdf::class,
 ],
 ```
 
@@ -35,7 +35,7 @@ Add `'Toastr' => Aryatama045\Toastr\Facades\Toastr::class` to `aliases` in `conf
 
 ```php
 use App\Http\Controllers\Controller;
-use Aryatama045\Fpdf\Facades\Fpdf;
+use Codedge\Fpdf\Facades\Fpdf;
 
 class MyController extends Controller
 {
@@ -60,7 +60,7 @@ create your pdf class
 ```php
 namespace App\Pdf;
 
-use Aryatama045\Fpdf\Fpdf;
+use Codedge\Fpdf\Fpdf;
 
 class MyPdf extends Fpdf
 {
@@ -72,7 +72,7 @@ class MyPdf extends Fpdf
         parent::__construct('P', 'mm', 'A4');
         $this->SetA4();
         $this->SetTitle('My pdf title', true);
-        $this->SetAuthor('Aryatama045', true);
+        $this->SetAuthor('Aryatama', true);
         $this->AddPage('L');
         $this->Body();
     }
