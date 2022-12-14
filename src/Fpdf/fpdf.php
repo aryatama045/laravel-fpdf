@@ -1,4 +1,4 @@
-<?php namespace Codedge\Fpdf\Fpdf;
+<?php namespace Aryatama045\Fpdf\Fpdf;
 /*******************************************************************************
 * FPDF                                                                         *
 *                                                                              *
