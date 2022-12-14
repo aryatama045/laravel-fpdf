@@ -10,15 +10,15 @@ composer require aryatama045/laravel-fpdf
 
 **2) Optional:** Laravel 5.4 and below
 
-Add `Aryatama\Toastr\ToastrServiceProvider::class` to `providers` in `config/app.php`. <br>
-Add `'Toastr' => Aryatama\Toastr\Facades\Toastr::class` to `aliases` in `config/app.php`. <br>
+Add `Aryatama045\Toastr\ToastrServiceProvider::class` to `providers` in `config/app.php`. <br>
+Add `'Toastr' => Aryatama045\Toastr\Facades\Toastr::class` to `aliases` in `config/app.php`. <br>
 
 ```
 // config/app.php
 
 'providers' => [
   // ...
-  Aryatama\LaraFpdf\LaraFpdfServiceProvider::class,
+  Aryatama045\LaraFpdf\LaraFpdfServiceProvider::class,
 ],
 
 'aliases' => [
@@ -60,7 +60,7 @@ create your pdf class
 ```php
 namespace App\Pdf;
 
-use Aryatama\LaraFpdf\LaraFpdf;
+use Aryatama045\LaraFpdf\LaraFpdf;
 
 class MyPdf extends LaraFpdf
 {
@@ -72,7 +72,7 @@ class MyPdf extends LaraFpdf
         parent::__construct('P', 'mm', 'A4');
         $this->SetA4();
         $this->SetTitle('My pdf title', true);
-        $this->SetAuthor('Aryatama', true);
+        $this->SetAuthor('Aryatama045', true);
         $this->AddPage('L');
         $this->Body();
     }

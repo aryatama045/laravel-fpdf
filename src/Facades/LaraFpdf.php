@@ -1,14 +1,14 @@
 <?php
 
-namespace Aryatama\LaraFpdf\Facades;
+namespace Aryatama045\LaraFpdf\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Aryatama\LaraFpdf\LaraFpdf as Fpdf;
+use Aryatama045\LaraFpdf\LaraFpdf as Fpdf;
 
 /**
- * @see \Aryatama\LaraFpdf\LaraFpdf
+ * @see \Aryatama045\LaraFpdf\LaraFpdf
  * Class LaraFpdf
- * @package Aryatama\LaraFpdf\Facades
+ * @package Aryatama045\LaraFpdf\Facades
  */
 class LaraFpdf extends Facade
 {
