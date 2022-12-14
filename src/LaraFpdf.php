@@ -2,9 +2,9 @@
 
 namespace Aryatama\LaraFpdf;
 
-use Aryatama\LaraFpdf\Fpdf\FPDF;
+use Aryatama\LaraFpdf\Fpdf\Fpdf;
 
-class LaraFpdf extends FPDF
+class LaraFpdf extends Fpdf
 {
     protected $maxWidth;
     protected $maxHeight;
