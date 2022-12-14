@@ -179,63 +179,63 @@ function __construct($orientation='P', $unit='mm', $size='A4')
 	$this->PDFVersion = '1.3';
 }
 
-public function GetMaxWidth()
+function GetMaxWidth()
 {
 	return $this->maxWidth;
 }
 
-public function GetMaxHeight()
+function GetMaxHeight()
 {
 	return $this->maxHeight;
 }
 
-public function GetMarginLeft()
+function GetMarginLeft()
 {
 	return $this->marginLeft;
 }
 
-public function GetMarginRight()
+function GetMarginRight()
 {
 	return $this->marginRight;
 }
 
-public function GetAngle()
+function GetAngle()
 {
 	return $this->angle;
 }
 
-public function SetMaxWidth($maxWidth)
+function SetMaxWidth($maxWidth)
 {
 	$this->maxWidth = $maxWidth;
 }
 
-public function SetMaxHeight($maxHeight)
+function SetMaxHeight($maxHeight)
 {
 	$this->maxHeight = $maxHeight;
 }
 
-public function SetMarginLeft($marginLeft)
+function SetMarginLeft($marginLeft)
 {
 	$this->marginLeft = $marginLeft;
 }
 
-public function SetMarginRight($marginRight)
+function SetMarginRight($marginRight)
 {
 	$this->marginRight = $marginRight;
 }
 
-public function SetAngle($angle)
+function SetAngle($angle)
 {
 	$this->angle = $angle;
 }
 
-public function SetOficio($width = 216, $height = 330)
+function SetOficio($width = 216, $height = 330)
 {
 	$this->setMaxHeight($width);
 	$this->setMaxWidth($height);
 }
 
-public function SetA4($width = 210, $height = 297)
+function SetA4($width = 210, $height = 297)
 {
 	$this->setMaxHeight($width);
 	$this->setMaxWidth($height);
