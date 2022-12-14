@@ -1,9 +1,9 @@
 <?php
 
-namespace Aryatama045\LaraFpdf;
+namespace Aryatama\LaraFpdf;
 
 use Illuminate\Support\ServiceProvider;
-use Aryatama045\LaraFpdf\LaraFpdf;
+use Aryatama\LaraFpdf\LaraFpdf;
 
 class LaraFpdfServiceProvider extends ServiceProvider
 {

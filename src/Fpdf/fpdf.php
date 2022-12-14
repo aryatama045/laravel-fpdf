@@ -1,6 +1,6 @@
 <?php
 
-namespace Aryatama045\LaraFpdf\Fpdf;
+namespace Aryatama\LaraFpdf\Fpdf;
 
 /*******************************************************************************
  * FPDF                                                                         *

@@ -14,5 +14,5 @@ return [
     'font-family' => 'Arial',
     'font-size' => '14',
     'font-style' => '',
-    'author' => 'Aryatama045',
+    'author' => 'Aryatama',
 ];

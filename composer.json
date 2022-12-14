@@ -30,7 +30,7 @@
         "Aryatama\\LaraFpdf\\LaraFpdfServiceProvider"
       ],
       "aliases": {
-        "LaraFpdf": "Arya\\LaraFpdf\\Facades\\LaraFpdf"
+        "LaraFpdf": "Aryatama\\LaraFpdf\\Facades\\LaraFpdf"
       }
     }
   }
