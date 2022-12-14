@@ -25,7 +25,7 @@
   "prefer-stable": true,
   "autoload": {
       "psr-4": {
-          "Aryatama\\Fpdf\\": "src"
+          "Codedge\\Fpdf\\": "src"
       }
   },
   "config": {
@@ -34,10 +34,10 @@
   "extra": {
       "laravel": {
           "aliases": {
-              "Fpdf": "Aryatama\\Fpdf\\Facades\\Fpdf"
+              "Fpdf": "Codedge\\Fpdf\\Facades\\Fpdf"
           },
           "providers": [
-              "Aryatama\\Fpdf\\FpdfServiceProvider"
+              "Codedge\\Fpdf\\FpdfServiceProvider"
           ]
       }
   }
