@@ -10,20 +10,18 @@ composer require aryatama045/laravel-fpdf
 
 **2) Optional:** Laravel 5.4 and below
 
-Add `Codedge\Toastr\ToastrServiceProvider::class` to `providers` in `config/app.php`. <br>
-Add `'Toastr' => Codedge\Toastr\Facades\Toastr::class` to `aliases` in `config/app.php`. <br>
 
 ```
 // config/app.php
 
 'providers' => [
   // ...
-  Codedge\Fpdf\FpdfServiceProvider::class,
+  Aryatama045\Fpdf\FpdfServiceProvider::class,
 ],
 
 'aliases' => [
   // ...
-  'Fpdf' => Codedge\Fpdf\Facades\Fpdf::class,
+  'Fpdf' => Aryatama045\Fpdf\Facades\Fpdf::class,
 ],
 ```
 
@@ -35,7 +33,7 @@ Add `'Toastr' => Codedge\Toastr\Facades\Toastr::class` to `aliases` in `config/a
 
 ```php
 use App\Http\Controllers\Controller;
-use Codedge\Fpdf\Facades\Fpdf;
+use Aryatama045\Fpdf\Facades\Fpdf;
 
 class MyController extends Controller
 {
@@ -60,7 +58,7 @@ create your pdf class
 ```php
 namespace App\Pdf;
 
-use Codedge\Fpdf\Fpdf;
+use Aryatama045\Fpdf\Fpdf;
 
 class MyPdf extends Fpdf
 {
